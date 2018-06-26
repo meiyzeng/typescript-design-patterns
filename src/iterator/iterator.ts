@@ -16,12 +16,18 @@ namespace IteratorPattern {
       this.collection = collection;
     }
 
+    /**
+     * 获取下一个元素
+     */
     public next(): any {
       var result = this.collection[this.position];
       this.position += 1;
       return result;
     }
 
+    /**
+     * 判断是否还有下一个元素
+     */
     public hasNext(): boolean {
       return this.position < this.collection.length;
     }
