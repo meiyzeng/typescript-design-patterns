@@ -28,7 +28,7 @@
 - Iterator
 - Mediator
 - Memento]
-- Observer
+- [Observer](https://github.com/semlinker/typescript-design-patterns/tree/master/src/observer)
 - State
 - Strategy
 - Template Method
@@ -63,7 +63,7 @@ $ npm start
 ### 参考资源
 
 * [torokmark/design_patterns_in_typescript](https://github.com/torokmark/design_patterns_in_typescript)
-* ​
+* ​JavaScript设计模式与开发实践
 
 
 

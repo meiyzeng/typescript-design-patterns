@@ -1,4 +1,5 @@
 /// <reference path="singleton/demo.ts" />
+/// <reference path="observer/demo.ts" />
 
 const readline = require("readline");
 
@@ -49,6 +50,9 @@ namespace Patterns {
       switch (+answer) {
         case 1:
           show(SingletonPattern);
+          break;
+        case 19:
+          show(ObserverPattern);
           break;
         default:
           break;
