@@ -25,9 +25,9 @@
 - Chain of Responsibility
 - Command
 - Interpreter
-- Iterator
+- [Iterator](https://github.com/semlinker/typescript-design-patterns/tree/master/src/iterator)
 - Mediator
-- Memento]
+- Memento
 - [Observer](https://github.com/semlinker/typescript-design-patterns/tree/master/src/observer)
 - State
 - Strategy
