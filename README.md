@@ -17,7 +17,7 @@
 - Composite
 - Decorator
 - Facade
-- Flyweight
+- [Flyweight](https://github.com/semlinker/typescript-design-patterns/tree/master/src/flyweight)
 - Proxy
 
 #### Behavioral Patterns（行为型模式）

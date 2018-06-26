@@ -58,11 +58,85 @@ class IphoneFlyweight {
 
 我们定义了 iPhone 的享元类，其中包含型号、屏幕、内存三个数据。我们还需要一个享元工厂来维护这些数据：
 
+```typescript
+export class FlyweightFactory {
+    private phonesMap: { [s: string]: IphoneFlyweight } = <any>{};
 
+    public get(model: string, screen: number, memory: number): IphoneFlyweight {
+      const key = model + screen + memory;
+      if (!this.phonesMap[key]) {
+        this.phonesMap[key] = new IphoneFlyweight(model, screen, memory);
+      }
+      return this.phonesMap[key];
+    }
+}
+```
+
+在这个工厂中，我们定义了一个对象来保存享元对象，并提供一个方法根据参数来获取享元对象，如果字典中有则直接返回，没有则创建一个返回。
 
 #### 具体实现
 
+IphoneFlyweight & FlyweightFactory
 
+```typescript
+/**
+   * 内部状态：model, screen, memory
+   * 外部状态：sn
+   */
+export class IphoneFlyweight {
+    constructor(model: string, screen: number, memory: number) {}
+}
+
+export class FlyweightFactory {
+    private phonesMap: { [s: string]: IphoneFlyweight } = <any>{};
+
+    public get(model: string, screen: number, memory: number): IphoneFlyweight {
+      const key = model + screen + memory;
+      if (!this.phonesMap[key]) {
+        this.phonesMap[key] = new IphoneFlyweight(model, screen, memory);
+      }
+      return this.phonesMap[key];
+    }
+}
+```
+
+Iphone & IphoneFactory
+
+```typescript
+export class Iphone {
+    constructor(flyweight: IphoneFlyweight, sn: number) {}
+}
+
+export class IphoneFactory {
+    private static flyweightFactory: FlyweightFactory = new FlyweightFactory();
+
+    public getIphone(
+      model: string,
+      screen: number,
+      memory: number,
+      sn: number
+    ) {
+      const flyweight: IphoneFlyweight = IphoneFactory.flyweightFactory.get(
+        model,
+        screen,
+        memory
+      );
+      return new Iphone(flyweight, sn);
+    }
+}
+```
 
 #### 使用示例
+
+```typescript
+export function show(): void {
+      const iphoneFactory = new IphoneFactory();
+      const phones = [];
+      for (var i = 0; i < 10000; i++) {
+        var memory = i % 2 == 0 ? 16 : 32;
+        phones.push(iphoneFactory.getIphone("iPhoneX", 5.0, memory, i));
+      }
+      console.log("Already created 10000 iPhoneX");
+}
+```
 

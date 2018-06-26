@@ -7,8 +7,8 @@ namespace FlyweightPattern {
       for (var i = 0; i < 10000; i++) {
         var memory = i % 2 == 0 ? 16 : 32;
         phones.push(iphoneFactory.getIphone("iPhoneX", 5.0, memory, i));
-	  }
-	  console.log('Already created 10000 iPhoneX');
+      }
+      console.log("Already created 10000 iPhoneX");
     }
   }
 }
