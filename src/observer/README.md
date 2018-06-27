@@ -29,7 +29,16 @@
 
 - 一个对象的行为依赖于另一个对象的状态。或者换一种说法，当被观察对象（目标对象）的状态发生改变时 ，会直接影响到观察对象的行为。
 
-### 四、实战
+### 四、模式结构
+
+观察者模式包含以下角色：
+
+* Subject：主题类
+* Observer：观察者
+
+![observer-pattern-class-diagram](observer-pattern-class-diagram.png)
+
+### 五、实战
 
 #### 具体实现
 
@@ -74,9 +83,8 @@ export class Observer {
 ```typescript
 export function show(): void {
       const subject: ObserverPattern.Subject = new ObserverPattern.Subject();
-      subject.register(new ObserverPattern.Observer("semlinker"));
-      subject.register(new ObserverPattern.Observer("lolo"));
-      subject.notify();
+      subject.addObserver(new ObserverPattern.Observer("semlinker"));
+      subject.addObserver(new ObserverPattern.Observer("lolo"));
+      subject.notifyObservers();
 }
 ```
-

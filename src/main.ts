@@ -1,4 +1,5 @@
 /// <reference path="singleton/demo.ts" />
+/// <reference path="adapter/demo.ts" />
 /// <reference path="flyweight/demo.ts" />
 /// <reference path="iterator/demo.ts" />
 /// <reference path="observer/demo.ts" />
@@ -52,6 +53,9 @@ namespace Patterns {
       switch (+answer) {
         case 1:
           show(SingletonPattern);
+          break;
+        case 6:
+          show(AdapterPattern);
           break;
         case 11:
           show(FlyweightPattern);

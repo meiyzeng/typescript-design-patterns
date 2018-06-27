@@ -9,7 +9,7 @@ namespace ObserverPattern {
      * 注册观察者
      * @param observer
      */
-    public register(observer: Observer): void {
+    public addObserver(observer: Observer): void {
       console.log(observer, "is pushed!");
       this.observers.push(observer);
     }
@@ -18,7 +18,7 @@ namespace ObserverPattern {
      * 移除观察者
      * @param observer
      */
-    public unregister(observer: Observer): void {
+    public deleteObserver(observer: Observer): void {
       var n: number = this.observers.indexOf(observer);
       console.log(observer, "is removed");
       this.observers.splice(n, 1);
@@ -27,7 +27,7 @@ namespace ObserverPattern {
     /**
      * 通知所有观察者
      */
-    public notify(): void {
+    public notifyObservers(): void {
       console.log("notify all the observers", this.observers);
       this.observers.forEach(observer => observer.notify());
     }

@@ -4,9 +4,9 @@ namespace ObserverPattern {
     export function show(): void {
       const subject: ObserverPattern.Subject = new ObserverPattern.Subject();
 
-      subject.register(new ObserverPattern.Observer("semlinker"));
-      subject.register(new ObserverPattern.Observer("lolo"));
-      subject.notify();
+      subject.addObserver(new ObserverPattern.Observer("semlinker"));
+      subject.addObserver(new ObserverPattern.Observer("lolo"));
+      subject.notifyObservers();
     }
   }
 }

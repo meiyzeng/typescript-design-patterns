@@ -12,7 +12,7 @@
 
 #### Structural Patterns（结构型模式）
 
-- Adapter
+- [Adapter](https://github.com/semlinker/typescript-design-patterns/tree/master/src/adapter)
 - Bridge
 - Composite
 - Decorator
