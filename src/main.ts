@@ -1,4 +1,6 @@
 /// <reference path="singleton/demo.ts" />
+/// <reference path="factory-method/demo.ts" />
+/// <reference path="builder/demo.ts" />
 /// <reference path="adapter/demo.ts" />
 /// <reference path="flyweight/demo.ts" />
 /// <reference path="iterator/demo.ts" />
@@ -56,6 +58,9 @@ namespace Patterns {
           break;
         case 3:
           show(FactoryMethodPattern);
+          break;
+        case 4:
+          show(BuilderPattern);
           break;
         case 6:
           show(AdapterPattern);
