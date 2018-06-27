@@ -6,7 +6,7 @@
 
 - [Singleton](https://github.com/semlinker/typescript-design-patterns/tree/master/src/singleton)
 - Abstract Factory
-- Factory Method
+- [Factory Method](https://github.com/semlinker/typescript-design-patterns/tree/master/src/factory-method)
 - Builder
 - Prototype
 
@@ -63,6 +63,7 @@ $ npm start
 ### 参考资源
 
 * [torokmark/design_patterns_in_typescript](https://github.com/torokmark/design_patterns_in_typescript)
+* [图说设计模式](http://design-patterns.readthedocs.io/zh_CN/latest/index.html)
 * ​JavaScript设计模式与开发实践
 
 

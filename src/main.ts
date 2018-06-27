@@ -54,6 +54,9 @@ namespace Patterns {
         case 1:
           show(SingletonPattern);
           break;
+        case 3:
+          show(FactoryMethodPattern);
+          break;
         case 6:
           show(AdapterPattern);
           break;
