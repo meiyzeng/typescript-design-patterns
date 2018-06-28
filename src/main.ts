@@ -5,6 +5,7 @@
 /// <reference path="flyweight/demo.ts" />
 /// <reference path="iterator/demo.ts" />
 /// <reference path="observer/demo.ts" />
+/// <reference path="template-method/demo.ts" />
 
 const readline = require("readline");
 
@@ -73,6 +74,9 @@ namespace Patterns {
           break;
         case 19:
           show(ObserverPattern);
+          break;
+        case 22:
+          show(TemplateMethodPattern);
           break;
         default:
           break;

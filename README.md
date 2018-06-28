@@ -31,7 +31,7 @@
 - [Observer](https://github.com/semlinker/typescript-design-patterns/tree/master/src/observer)
 - State
 - Strategy
-- Template Method
+- [Template Method](https://github.com/semlinker/typescript-design-patterns/tree/master/src/template-method)
 - Visitor
 
 ### 项目使用
