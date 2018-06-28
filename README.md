@@ -30,7 +30,7 @@
 - Memento
 - [Observer](https://github.com/semlinker/typescript-design-patterns/tree/master/src/observer)
 - State
-- Strategy
+- [Strategy](https://github.com/semlinker/typescript-design-patterns/tree/master/src/strategy)
 - [Template Method](https://github.com/semlinker/typescript-design-patterns/tree/master/src/template-method)
 - Visitor
 
