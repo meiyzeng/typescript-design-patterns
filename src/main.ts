@@ -7,6 +7,8 @@
 /// <reference path="observer/demo.ts" />
 /// <reference path="strategy/demo.ts" />
 /// <reference path="template-method/demo.ts" />
+/// <reference path="prototype/demo.ts" />
+/// <reference path="proxy/demo.ts" />
 
 const readline = require("readline");
 
@@ -64,11 +66,17 @@ namespace Patterns {
         case 4:
           show(BuilderPattern);
           break;
+		case 5:
+          show(PrototypePattern);
+          break;
         case 6:
           show(AdapterPattern);
           break;
         case 11:
           show(FlyweightPattern);
+          break;
+		case 12:
+          show(ProxyPattern);
           break;
         case 16:
           show(IteratorPattern);
