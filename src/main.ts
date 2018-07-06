@@ -9,7 +9,7 @@
 /// <reference path="template-method/demo.ts" />
 /// <reference path="prototype/demo.ts" />
 /// <reference path="proxy/demo.ts" />
-
+/// <reference path="chain_of_responsibility/demo.ts" />
 const readline = require("readline");
 
 namespace Patterns {
@@ -77,6 +77,8 @@ namespace Patterns {
           break;
 		case 12:
           show(ProxyPattern);
+        case 13:
+          show(ChainOfResponsibilityPattern);
           break;
         case 16:
           show(IteratorPattern);
