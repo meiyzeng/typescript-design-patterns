@@ -83,7 +83,3 @@ class IdValidator extends Handler {
     idValidator.processRequest(request);
   }
 ```
-
-关键代码：Handler 里面聚合它自己，在 HanleRequest 里判断是否合适，如果没达到条件则向下传递，向谁传递之前 set 进去。
-
-应用实例： JS 中的事件冒泡
